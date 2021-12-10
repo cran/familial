@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="author" content="Ryan Thompson" />
+
+
+<title>Guide to familial</title>
+
+<script src="data:application/javascript;base64,Ly8gUGFuZG9jIDIuOSBhZGRzIGF0dHJpYnV0ZXMgb24gYm90aCBoZWFkZXIgYW5kIGRpdi4gV2UgcmVtb3ZlIHRoZSBmb3JtZXIgKHRvCi8vIGJlIGNvbXBhdGlibGUgd2l0aCB0aGUgYmVoYXZpb3Igb2YgUGFuZG9jIDwgMi44KS4KZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGZ1bmN0aW9uKGUpIHsKICB2YXIgaHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCJkaXYuc2VjdGlvbltjbGFzcyo9J2xldmVsJ10gPiA6Zmlyc3QtY2hpbGQiKTsKICB2YXIgaSwgaCwgYTsKICBmb3IgKGkgPSAwOyBpIDwgaHMubGVuZ3RoOyBpKyspIHsKICAgIGggPSBoc1tpXTsKICAgIGlmICghL15oWzEtNl0kL2kudGVzdChoLnRhZ05hbWUpKSBjb250aW51ZTsgIC8vIGl0IHNob3VsZCBiZSBhIGhlYWRlciBoMS1oNgogICAgYSA9IGguYXR0cmlidXRlczsKICAgIHdoaWxlIChhLmxlbmd0aCA+IDApIGgucmVtb3ZlQXR0cmlidXRlKGFbMF0ubmFtZSk7CiAgfQp9KTsK"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+<style type="text/css">
+  code {
+    white-space: pre;
+  }
+  .sourceCode {
+    overflow: visible;
+  }
+</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<link rel="stylesheet" href="data:text/css,body%20%7B%0Abackground%2Dcolor%3A%20%23fff%3B%0Amargin%3A%201em%20auto%3B%0Amax%2Dwidth%3A%20700px%3B%0Aoverflow%3A%20visible%3B%0Apadding%2Dleft%3A%202em%3B%0Apadding%2Dright%3A%202em%3B%0Afont%2Dfamily%3A%20%22Open%20Sans%22%2C%20%22Helvetica%20Neue%22%2C%20Helvetica%2C%20Arial%2C%20sans%2Dserif%3B%0Afont%2Dsize%3A%2014px%3B%0Aline%2Dheight%3A%201%2E35%3B%0A%7D%0A%23TOC%20%7B%0Aclear%3A%20both%3B%0Amargin%3A%200%200%2010px%2010px%3B%0Apadding%3A%204px%3B%0Awidth%3A%20400px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Aborder%2Dradius%3A%205px%3B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Afont%2Dsize%3A%2013px%3B%0Aline%2Dheight%3A%201%2E3%3B%0A%7D%0A%23TOC%20%2Etoctitle%20%7B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dsize%3A%2015px%3B%0Amargin%2Dleft%3A%205px%3B%0A%7D%0A%23TOC%20ul%20%7B%0Apadding%2Dleft%3A%2040px%3B%0Amargin%2Dleft%3A%20%2D1%2E5em%3B%0Amargin%2Dtop%3A%205px%3B%0Amargin%2Dbottom%3A%205px%3B%0A%7D%0A%23TOC%20ul%20ul%20%7B%0Amargin%2Dleft%3A%20%2D2em%3B%0A%7D%0A%23TOC%20li%20%7B%0Aline%2Dheight%3A%2016px%3B%0A%7D%0Atable%20%7B%0Amargin%3A%201em%20auto%3B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dcolor%3A%20%23DDDDDD%3B%0Aborder%2Dstyle%3A%20outset%3B%0Aborder%2Dcollapse%3A%20collapse%3B%0A%7D%0Atable%20th%20%7B%0Aborder%2Dwidth%3A%202px%3B%0Apadding%3A%205px%3B%0Aborder%2Dstyle%3A%20inset%3B%0A%7D%0Atable%20td%20%7B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dstyle%3A%20inset%3B%0Aline%2Dheight%3A%2018px%3B%0Apadding%3A%205px%205px%3B%0A%7D%0Atable%2C%20table%20th%2C%20table%20td%20%7B%0Aborder%2Dleft%2Dstyle%3A%20none%3B%0Aborder%2Dright%2Dstyle%3A%20none%3B%0A%7D%0Atable%20thead%2C%20table%20tr%2Eeven%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Ap%20%7B%0Amargin%3A%200%2E5em%200%3B%0A%7D%0Ablockquote%20%7B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Apadding%3A%200%2E25em%200%2E75em%3B%0A%7D%0Ahr%20%7B%0Aborder%2Dstyle%3A%20solid%3B%0Aborder%3A%20none%3B%0Aborder%2Dtop%3A%201px%20solid%20%23777%3B%0Amargin%3A%2028px%200%3B%0A%7D%0Adl%20%7B%0Amargin%2Dleft%3A%200%3B%0A%7D%0Adl%20dd%20%7B%0Amargin%2Dbottom%3A%2013px%3B%0Amargin%2Dleft%3A%2013px%3B%0A%7D%0Adl%20dt%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Aul%20%7B%0Amargin%2Dtop%3A%200%3B%0A%7D%0Aul%20li%20%7B%0Alist%2Dstyle%3A%20circle%20outside%3B%0A%7D%0Aul%20ul%20%7B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Apre%2C%20code%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0Aborder%2Dradius%3A%203px%3B%0Acolor%3A%20%23333%3B%0Awhite%2Dspace%3A%20pre%2Dwrap%3B%20%0A%7D%0Apre%20%7B%0Aborder%2Dradius%3A%203px%3B%0Amargin%3A%205px%200px%2010px%200px%3B%0Apadding%3A%2010px%3B%0A%7D%0Apre%3Anot%28%5Bclass%5D%29%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Acode%20%7B%0Afont%2Dfamily%3A%20Consolas%2C%20Monaco%2C%20%27Courier%20New%27%2C%20monospace%3B%0Afont%2Dsize%3A%2085%25%3B%0A%7D%0Ap%20%3E%20code%2C%20li%20%3E%20code%20%7B%0Apadding%3A%202px%200px%3B%0A%7D%0Adiv%2Efigure%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Aimg%20%7B%0Abackground%2Dcolor%3A%20%23FFFFFF%3B%0Apadding%3A%202px%3B%0Aborder%3A%201px%20solid%20%23DDDDDD%3B%0Aborder%2Dradius%3A%203px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Amargin%3A%200%205px%3B%0A%7D%0Ah1%20%7B%0Amargin%2Dtop%3A%200%3B%0Afont%2Dsize%3A%2035px%3B%0Aline%2Dheight%3A%2040px%3B%0A%7D%0Ah2%20%7B%0Aborder%2Dbottom%3A%204px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Apadding%2Dbottom%3A%202px%3B%0Afont%2Dsize%3A%20145%25%3B%0A%7D%0Ah3%20%7B%0Aborder%2Dbottom%3A%202px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Afont%2Dsize%3A%20120%25%3B%0A%7D%0Ah4%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23f7f7f7%3B%0Amargin%2Dleft%3A%208px%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Ah5%2C%20h6%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23ccc%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Aa%20%7B%0Acolor%3A%20%230033dd%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aa%3Ahover%20%7B%0Acolor%3A%20%236666ff%3B%20%7D%0Aa%3Avisited%20%7B%0Acolor%3A%20%23800080%3B%20%7D%0Aa%3Avisited%3Ahover%20%7B%0Acolor%3A%20%23BB00BB%3B%20%7D%0Aa%5Bhref%5E%3D%22http%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0Aa%5Bhref%5E%3D%22https%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0A%0Acode%20%3E%20span%2Ekw%20%7B%20color%3A%20%23555%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Edt%20%7B%20color%3A%20%23902000%3B%20%7D%20%0Acode%20%3E%20span%2Edv%20%7B%20color%3A%20%2340a070%3B%20%7D%20%0Acode%20%3E%20span%2Ebn%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Efl%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Ech%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Est%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Eco%20%7B%20color%3A%20%23888888%3B%20font%2Dstyle%3A%20italic%3B%20%7D%20%0Acode%20%3E%20span%2Eot%20%7B%20color%3A%20%23007020%3B%20%7D%20%0Acode%20%3E%20span%2Eal%20%7B%20color%3A%20%23ff0000%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Efu%20%7B%20color%3A%20%23900%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Eer%20%7B%20color%3A%20%23a61717%3B%20background%2Dcolor%3A%20%23e3d2d2%3B%20%7D%20%0A" type="text/css" />
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Guide to familial</h1>
+<h4 class="author">Ryan Thompson</h4>
+
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p><code>familal</code> is an R package for testing familial hypotheses. Briefly, familial hypotheses are statements of the form <span class="math display">\[
+\mathrm{H}_0:\mu(\lambda)=\mu_0\text{ for some }\lambda\in\Lambda\quad\text{vs.}\quad\mathrm{H}_1:\mu(\lambda)\neq\mu_0\text{ for all }\lambda\in\Lambda,
+\]</span> where <span class="math inline">\(\{\mu(\lambda):\lambda\in\Lambda\}\)</span> is a family of centers. Presently, <code>familial</code> supports tests of the Huber family of centers. The mean and median are members of this family.</p>
+<p>To test familial hypotheses, <code>familial</code> uses the Bayesian bootstrap. The Bayesian bootstrap uses weights <span class="math inline">\(w_1^{(b)},\ldots,w_n^{(b)}\)</span> (<span class="math inline">\(b=1,\ldots,B\)</span>) from a uniform Dirichlet distribution in the computation <span class="math display">\[
+\hat{\mu}^{(b)}(\lambda):=\underset{\mu\in\mathbb{R}}{\operatorname{arg~min}}\sum_{i=1}^nw_i^{(b)}\ell_\lambda\left(\frac{x_i-\mu}{\sigma}\right),
+\]</span> where the Huber loss function <span class="math inline">\(l_\lambda\)</span> is defined as <span class="math display">\[
+\ell_\lambda(z):=
+\begin{cases}
+\frac{1}{2}z^2, &amp; \text{if } |z|&lt;\lambda, \\
+\lambda|z|-\frac{1}{2}\lambda^2, &amp; \text{otherwise}.
+\end{cases}
+\]</span></p>
+<p>The above minimization is solved for all values of <span class="math inline">\(\lambda\in\Lambda=(0,\infty)\)</span> for <span class="math inline">\(b=1,\ldots,B\)</span>. The proportion of times that <span class="math inline">\(\{\hat{\mu}^{(b)}(\lambda):\lambda\in\Lambda\}_{b=1}^B\)</span> contains the null value <span class="math inline">\(\mu_0\)</span> represents the estimated posterior probability of <span class="math inline">\(\mathrm{H}_0\)</span> being true. To map this probability to a decision (accept, reject, or indeterminate), we assign a loss to making an incorrect decision. The decision that minimizes the expected loss under the posterior distribution is the optimal one.</p>
+</div>
+<div id="one-sample-tests" class="section level2">
+<h2>One-sample tests</h2>
+<p>Let’s demonstrate the functionality of <code>familial</code>. To perform a test of centers with the Huber family, use the <code>center.test</code> function with argument <code>family=&#39;huber&#39;</code> (the default setting). We’ll test whether the velocity of galaxies in the <code>galaxies</code> dataset is different to 21,000 km/sec.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(familial)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> MASS<span class="sc">::</span>galaxies</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="fu">center.test</span>(x, <span class="at">mu =</span> <span class="dv">21000</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(test)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; mu = 21000 </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.542 0.458 </span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; optimal decision: indeterminate</span></span></code></pre></div>
+<p>The output above shows the estimated posterior probabilities for the events <span class="math inline">\(\mathrm{H}_0\)</span> and <span class="math inline">\(\mathrm{H}_1\)</span>. The 54.2% probability assigned to <span class="math inline">\(\mathrm{H}_0\)</span> means that the Huber family contained a center equal to 21,000 km/sec in 54.2% of bootstraps. Because neither of the above probabilities is much larger than the other, the test results in an indeterminate outcome. By default, the function will return an indeterminate result when neither <span class="math inline">\(\mathrm{H}_0\)</span> nor <span class="math inline">\(\mathrm{H}_1\)</span> have probability at least 0.95. This choice of threshold is analogous to using a frequentist significance level of 0.05.</p>
+<p>It is possible to visualize the posterior using a functional boxplot via the <code>plot</code> function.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(test)</span></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+<p>Rather than specify a null value that is a point, we can specify the null as an interval. Let’s now test whether the velocity is between 20,500 km/sec and 21,500 km/sec.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">center.test</span>(x, <span class="at">mu =</span> <span class="fu">c</span>(<span class="dv">20500</span>, <span class="dv">21500</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; mu = 20500 21500 </span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.959 0.041 </span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; optimal decision: H0</span></span></code></pre></div>
+<p>The test now accepts <span class="math inline">\(\mathrm{H}_0\)</span>.</p>
+</div>
+<div id="two-sample-tests" class="section level2">
+<h2>Two-sample tests</h2>
+<p><code>familial</code> also supports two-sample testing with paired or independent samples. We’ll now test whether the weight of cabbages in the <code>cabbages</code> dataset is different between two different cultivars. These samples are independent, so we set <code>paired = FALSE</code>.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> MASS<span class="sc">::</span>cabbages[MASS<span class="sc">::</span>cabbages<span class="sc">$</span>Cult <span class="sc">==</span> <span class="st">&#39;c39&#39;</span>, <span class="st">&#39;HeadWt&#39;</span>]</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> MASS<span class="sc">::</span>cabbages[MASS<span class="sc">::</span>cabbages<span class="sc">$</span>Cult <span class="sc">==</span> <span class="st">&#39;c52&#39;</span>, <span class="st">&#39;HeadWt&#39;</span>]</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="fu">center.test</span>(x, y, <span class="at">paired =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(test)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; mu = 0 </span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.008 0.992 </span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; optimal decision: H1</span></span></code></pre></div>
+<p>The test rejects <span class="math inline">\(\mathrm{H}_0\)</span> that the weight of cabbages is the same.</p>
+<p>We can also visualize the posterior differences between the family of each cultivar via a functional boxplot.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(test)</span></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+<p><code>familial</code> also supports one-sided tests. Let’s test whether family treatment (FT) improves the weight of anorexia patients in the <code>anorexia</code> dataset. These samples are paired.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> MASS<span class="sc">::</span>anorexia[MASS<span class="sc">::</span>anorexia<span class="sc">$</span>Treat <span class="sc">==</span> <span class="st">&#39;FT&#39;</span>, <span class="st">&#39;Postwt&#39;</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> MASS<span class="sc">::</span>anorexia[MASS<span class="sc">::</span>anorexia<span class="sc">$</span>Treat <span class="sc">==</span> <span class="st">&#39;FT&#39;</span>, <span class="st">&#39;Prewt&#39;</span>]</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">center.test</span>(x, y, <span class="at">alternative =</span> <span class="st">&#39;greater&#39;</span>, <span class="at">paired =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; mu = 0 </span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.006 0.994 </span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; optimal decision: H1</span></span></code></pre></div>
+<p>We again reject <span class="math inline">\(\mathrm{H}_0\)</span> that FT does not improve the weight of patients.</p>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
