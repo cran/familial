@@ -6,8 +6,8 @@
 
 ## Overview
 
-An R package for familial inference. Briefly, this package provides
-tests for hypotheses of the form
+An R package for [familial inference](https://arxiv.org/abs/2202.12540).
+Briefly, this package provides tests for hypotheses of the form
 
 ![
 \\mathrm{H}\_0:\\mu(\\lambda)=\\mu_0\\text{ for some }\\lambda\\in\\Lambda\\quad\\text{vs.}\\quad\\mathrm{H}\_1:\\mu(\\lambda)\\neq\\mu_0\\text{ for all }\\lambda\\in\\Lambda,
@@ -24,7 +24,6 @@ In contrast to classic statistical tests such as the
 ![t](https://latex.codecogs.com/png.latex?t "t") or sign tests for the
 mean or median, familial tests do not depend on a single (sometimes
 arbitrarily chosen) center.
-<!-- See the package [vignette](vignette.pdf) for illustrations. -->
 
 Presently, `familial` supports tests of the Huber family of centers,
 which includes the mean and median. Testing is carried out using a
