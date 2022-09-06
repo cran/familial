@@ -1,6 +1,6 @@
-0f7791ca0004c0c8f1a860b4967c7d2b *DESCRIPTION
+a72f958679d104a6f1b356e94226de89 *DESCRIPTION
 12bb23a24bf8270050b44ad2fc5f6292 *NAMESPACE
-fc79efd2219a29ccae98729aee7e1864 *NEWS.md
+1e7c1558739041231b4348e19270b392 *NEWS.md
 f6806767bdf555b777c410c7e5fb2402 *R/bayes-boot.R
 ff4fdeb65294a5e5e31cfad42e86e915 *R/center-test.R
 72abd692012c2774116de8e0adf9c39d *R/dirichlet.R
@@ -10,11 +10,11 @@ fb507983c4710ef70fe5b79b966bdfeb *R/examples/example-fit-family.R
 ab4dc5d52ff30a74a7174b60973a3aef *R/fit-family.R
 705fe856c0c1461d9ea9aaa348933d7b *R/weighted-stats.R
 f9baaf32e8851aa7b5e866154f193c5b *README.md
-a12e313313adc66b37ae892f19f785c9 *build/vignette.rds
+cfaed47342fc0bfbf059cebf908ccb7e *build/vignette.rds
 9ce8b851118f2b8bc4aefff8c81712ff *inst/CITATION
 56eb22bac2d3ffe7fed03ff6409369b9 *inst/doc/vignette.R
 90b16417eca1b4f29dd69a576270c0ca *inst/doc/vignette.Rmd
-577aa2f6b17dfb1814f4a4e6fc7ef1f2 *inst/doc/vignette.html
+06f41698ba0e8302c680dbd3d51569fd *inst/doc/vignette.html
 53f50a8cf7502b90cdfb168df64c7d0b *man/bayes.boot.Rd
 885fbbeca74f314b7931b8fd5c321472 *man/center.test.Rd
 43c55948d6ec03ec14e35473f84fbc75 *man/fit.family.Rd
