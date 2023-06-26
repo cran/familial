@@ -30,23 +30,23 @@ document.addEventListener('DOMContentLoaded', function(e) {
 </script>
 
 <style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
 
 
 
 <style type="text/css">
-  code {
-    white-space: pre;
-  }
-  .sourceCode {
-    overflow: visible;
-  }
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
 </style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
@@ -64,55 +64,54 @@ pre > code.sourceCode { white-space: pre-wrap; }
 pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
-  { counter-reset: source-line 0; }
+{ counter-reset: source-line 0; }
 pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
+{ position: relative; left: -4em; counter-increment: source-line; }
 pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
 div.sourceCode
-  {   }
+{ }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
 </style>
 <script>
 // apply pandoc div.sourceCode style to pre.sourceCode instead
@@ -381,19 +380,19 @@ perform a test of centers with the Huber family, use the
 <code>family=&#39;huber&#39;</code> (the default setting). We’ll test whether
 the velocity of galaxies in the <code>galaxies</code> dataset is
 different to 21,000 km/sec.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(familial)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> MASS<span class="sc">::</span>galaxies</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="fu">center.test</span>(x, <span class="at">mu =</span> <span class="dv">21000</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(test)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; mu = 21000 </span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.542 0.458 </span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; optimal decision: indeterminate</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(familial)</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>x <span class="ot">&lt;-</span> MASS<span class="sc">::</span>galaxies</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="fu">center.test</span>(x, <span class="at">mu =</span> <span class="dv">21000</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="fu">print</span>(test)</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="co">#&gt; mu = 21000 </span></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a><span class="co">#&gt; 0.542 0.458 </span></span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a><span class="co">#&gt; optimal decision: indeterminate</span></span></code></pre></div>
 <p>The output above shows the estimated posterior probabilities for the
 events <span class="math inline">\(\mathrm{H}_0\)</span> and <span class="math inline">\(\mathrm{H}_1\)</span>. The 54.2% probability
 assigned to <span class="math inline">\(\mathrm{H}_0\)</span> means that
@@ -406,20 +405,20 @@ default, the function will return an indeterminate result when both
 significance level of 0.05.</p>
 <p>It’s possible to visualize the posterior using a functional boxplot
 via the <code>plot</code> function.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(test)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">plot</span>(test)</span></code></pre></div>
 <p><img src="data:image/png;base64,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" /><!-- --></p>
 <p>Rather than specify a null value that is a point, we can specify a
 null that is an interval. Let’s now test whether the velocity is between
 20,500 km/sec and 21,500 km/sec.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">center.test</span>(x, <span class="at">mu =</span> <span class="fu">c</span>(<span class="dv">20500</span>, <span class="dv">21500</span>))</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; mu = 20500 21500 </span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.959 0.041 </span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; optimal decision: H0</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">center.test</span>(x, <span class="at">mu =</span> <span class="fu">c</span>(<span class="dv">20500</span>, <span class="dv">21500</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">#&gt; mu = 20500 21500 </span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="co">#&gt; 0.959 0.041 </span></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="co">#&gt; optimal decision: H0</span></span></code></pre></div>
 <p>The test now accepts <span class="math inline">\(\mathrm{H}_0\)</span>.</p>
 </div>
 <div id="two-sample-tests" class="section level2">
@@ -429,40 +428,40 @@ independent samples. We’ll now test whether the weight of cabbages in
 the <code>cabbages</code> dataset is different between two different
 cultivars. These samples are independent, so we set
 <code>paired = FALSE</code>.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> MASS<span class="sc">::</span>cabbages[MASS<span class="sc">::</span>cabbages<span class="sc">$</span>Cult <span class="sc">==</span> <span class="st">&#39;c39&#39;</span>, <span class="st">&#39;HeadWt&#39;</span>]</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> MASS<span class="sc">::</span>cabbages[MASS<span class="sc">::</span>cabbages<span class="sc">$</span>Cult <span class="sc">==</span> <span class="st">&#39;c52&#39;</span>, <span class="st">&#39;HeadWt&#39;</span>]</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="fu">center.test</span>(x, y, <span class="at">paired =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(test)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; mu = 0 </span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.008 0.992 </span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; optimal decision: H1</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> MASS<span class="sc">::</span>cabbages[MASS<span class="sc">::</span>cabbages<span class="sc">$</span>Cult <span class="sc">==</span> <span class="st">&#39;c39&#39;</span>, <span class="st">&#39;HeadWt&#39;</span>]</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>y <span class="ot">&lt;-</span> MASS<span class="sc">::</span>cabbages[MASS<span class="sc">::</span>cabbages<span class="sc">$</span>Cult <span class="sc">==</span> <span class="st">&#39;c52&#39;</span>, <span class="st">&#39;HeadWt&#39;</span>]</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="fu">center.test</span>(x, y, <span class="at">paired =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="fu">print</span>(test)</span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="co">#&gt; mu = 0 </span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="co">#&gt; 0.008 0.992 </span></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="co">#&gt; optimal decision: H1</span></span></code></pre></div>
 <p>The test rejects <span class="math inline">\(\mathrm{H}_0\)</span>
 that the weight of cabbages is the same.</p>
 <p>We can also visualize the posterior differences between the family of
 each cultivar via a functional boxplot.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(test)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">plot</span>(test)</span></code></pre></div>
 <p><img src="data:image/png;base64,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" /><!-- --></p>
 <p><code>familial</code> also supports one-sided tests. Let’s test
 whether family treatment (FT) improves the weight of anorexia patients
 in the <code>anorexia</code> dataset. These samples are paired.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> MASS<span class="sc">::</span>anorexia[MASS<span class="sc">::</span>anorexia<span class="sc">$</span>Treat <span class="sc">==</span> <span class="st">&#39;FT&#39;</span>, <span class="st">&#39;Postwt&#39;</span>]</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> MASS<span class="sc">::</span>anorexia[MASS<span class="sc">::</span>anorexia<span class="sc">$</span>Treat <span class="sc">==</span> <span class="st">&#39;FT&#39;</span>, <span class="st">&#39;Prewt&#39;</span>]</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">center.test</span>(x, y, <span class="at">alternative =</span> <span class="st">&#39;greater&#39;</span>, <span class="at">paired =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; mu = 0 </span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.006 0.994 </span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; optimal decision: H1</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> MASS<span class="sc">::</span>anorexia[MASS<span class="sc">::</span>anorexia<span class="sc">$</span>Treat <span class="sc">==</span> <span class="st">&#39;FT&#39;</span>, <span class="st">&#39;Postwt&#39;</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>y <span class="ot">&lt;-</span> MASS<span class="sc">::</span>anorexia[MASS<span class="sc">::</span>anorexia<span class="sc">$</span>Treat <span class="sc">==</span> <span class="st">&#39;FT&#39;</span>, <span class="st">&#39;Prewt&#39;</span>]</span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="fu">center.test</span>(x, y, <span class="at">alternative =</span> <span class="st">&#39;greater&#39;</span>, <span class="at">paired =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="co">#&gt; familial test of centers with huber family</span></span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co">#&gt; -----------------------------------------------</span></span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="co">#&gt; mu = 0 </span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="co">#&gt; posterior probabilities: </span></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">#&gt;    H0    H1 </span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co">#&gt; 0.006 0.994 </span></span>
+<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="co">#&gt; optimal decision: H1</span></span></code></pre></div>
 <p>We again reject <span class="math inline">\(\mathrm{H}_0\)</span>
 that FT does not improve the weight of patients.</p>
 </div>

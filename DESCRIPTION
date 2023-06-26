@@ -1,7 +1,7 @@
 Package: familial
 Type: Package
 Title: Statistical Tests of Familial Hypotheses
-Version: 1.0.4
+Version: 1.0.5
 Authors@R: person("Ryan", "Thompson",  email = "ryan.thompson1@unsw.edu.au", role = c("aut", "cre"), 
     comment = c(ORCID = "0000-0002-9002-0448"))
 Description: Provides functionality for testing familial hypotheses. Supports testing centers 
@@ -14,13 +14,13 @@ License: GPL-3
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Imports: parallel, ggplot2, DepthProc, matrixStats
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Suggests: testthat, knitr, rmarkdown, MASS
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2022-09-06 00:11:57 UTC; ryan
+Packaged: 2023-06-26 02:34:44 UTC; ryan
 Author: Ryan Thompson [aut, cre] (<https://orcid.org/0000-0002-9002-0448>)
 Maintainer: Ryan Thompson <ryan.thompson1@unsw.edu.au>
 Repository: CRAN
-Date/Publication: 2022-09-06 11:40:12 UTC
+Date/Publication: 2023-06-26 04:30:02 UTC
