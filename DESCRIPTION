@@ -1,8 +1,8 @@
 Package: familial
 Type: Package
 Title: Statistical Tests of Familial Hypotheses
-Version: 1.0.5
-Authors@R: person("Ryan", "Thompson",  email = "ryan.thompson1@unsw.edu.au", role = c("aut", "cre"), 
+Version: 1.0.6
+Authors@R: person("Ryan", "Thompson",  email = "ryan.thompson-1@uts.edu.au", role = c("aut", "cre"), 
     comment = c(ORCID = "0000-0002-9002-0448"))
 Description: Provides functionality for testing familial hypotheses. Supports testing centers 
     belonging to the Huber family. Testing is carried out using the Bayesian bootstrap. One- and 
@@ -14,13 +14,13 @@ License: GPL-3
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Imports: parallel, ggplot2, DepthProc, matrixStats
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Suggests: testthat, knitr, rmarkdown, MASS
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2023-06-26 02:34:44 UTC; ryan
+Packaged: 2024-11-28 04:33:06 UTC; ryan
 Author: Ryan Thompson [aut, cre] (<https://orcid.org/0000-0002-9002-0448>)
-Maintainer: Ryan Thompson <ryan.thompson1@unsw.edu.au>
+Maintainer: Ryan Thompson <ryan.thompson-1@uts.edu.au>
 Repository: CRAN
-Date/Publication: 2023-06-26 04:30:02 UTC
+Date/Publication: 2024-11-28 10:10:02 UTC
