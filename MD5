@@ -1,13 +1,13 @@
-18e46e753e704715ee56773dc357d581 *DESCRIPTION
+5cbced058eb183353a262db30129cb81 *DESCRIPTION
 12bb23a24bf8270050b44ad2fc5f6292 *NAMESPACE
-76684bdd904745407d7aa3973ff97b58 *NEWS.md
+02702cdcfcf636224f234a50a92b5620 *NEWS.md
 2b822d120b31769830a3f960ad55f9fe *R/bayes-boot.R
 88eb8303fed95943bc7e81dd891fc6bc *R/center-test.R
 4a905af468bdb1c03b4be745d2e29b87 *R/dirichlet.R
 bb8802c1b0695c964ed7e9f5e1f2c019 *R/examples/example-bayes-boot.R
 8c874b3282db4bd4b87c50c6fca50b9f *R/examples/example-center-test.R
 fb507983c4710ef70fe5b79b966bdfeb *R/examples/example-fit-family.R
-3b47d7126571ca4ef2f15b1570658292 *R/fit-family.R
+dc3076307e73baa0448eccb8311d529e *R/fit-family.R
 020e9b54c6d896357b53700f00e48949 *R/weighted-stats.R
 f9baaf32e8851aa7b5e866154f193c5b *README.md
 07ad88b7437db27010e769231e733bdd *build/vignette.rds
@@ -19,7 +19,7 @@ ee49f1e8ff591f0b42054526899b509f *inst/doc/vignette.html
 b5a44ec63dea81dcee4a8bf835caf993 *man/center.test.Rd
 8673a412f70ab5cf3e638e058f4b8a57 *man/fit.family.Rd
 b4d221546615efa9884afa02f6c8882c *man/plot.center.test.Rd
-5097c827f4210e455ec6c0fa3f460a8e *man/plot.fit.family.Rd
+676c69463a7d725b22d1a2bd5ba8436c *man/plot.fit.family.Rd
 5bc4f5accb0655c098c90081da085d3e *man/print.center.test.Rd
 05e29d74f41a108a52215a571e66e3b7 *man/rudirichlet.Rd
 4457829ab174b79686eddd4772f39a3d *man/weighted.Rd
